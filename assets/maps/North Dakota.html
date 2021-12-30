@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c6975268046e4bc596d46bab4a570d56 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c6975268046e4bc596d46bab4a570d56" ></div>
+        
+</body>
+<script>    
+    
+            var map_c6975268046e4bc596d46bab4a570d56 = L.map(
+                "map_c6975268046e4bc596d46bab4a570d56",
+                {
+                    center: [13.133932434766733, 16.103938729508073],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6594266dd6f0473db5e739ba427787f2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+            var marker_7b53e58742bc405287696ab68b8b7877 = L.marker(
+                [46.808327, -100.783739],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_815d72c1a1ce41bda3ccc6d6f1464b8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75730ce15848494f9465e5bb561777aa = $(`<div id="html_75730ce15848494f9465e5bb561777aa" style="width: 100.0%; height: 100.0%;">Bismarck</div>`)[0];
+            popup_815d72c1a1ce41bda3ccc6d6f1464b8b.setContent(html_75730ce15848494f9465e5bb561777aa);
+        
+
+        marker_7b53e58742bc405287696ab68b8b7877.bindPopup(popup_815d72c1a1ce41bda3ccc6d6f1464b8b)
+        ;
+
+        
+    
+    
+            marker_7b53e58742bc405287696ab68b8b7877.bindTooltip(
+                `<div>
+                     Bismarck
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b6c77e8ec0c41999771d0e8acc553b0 = L.marker(
+                [48.112779, -98.86512],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_fc5bc4f0f4394f1f860204280f7ad5f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f4ed1c7e67f4fd3a8a9e17848dfbcb7 = $(`<div id="html_1f4ed1c7e67f4fd3a8a9e17848dfbcb7" style="width: 100.0%; height: 100.0%;">Devils Lake</div>`)[0];
+            popup_fc5bc4f0f4394f1f860204280f7ad5f9.setContent(html_1f4ed1c7e67f4fd3a8a9e17848dfbcb7);
+        
+
+        marker_1b6c77e8ec0c41999771d0e8acc553b0.bindPopup(popup_fc5bc4f0f4394f1f860204280f7ad5f9)
+        ;
+
+        
+    
+    
+            marker_1b6c77e8ec0c41999771d0e8acc553b0.bindTooltip(
+                `<div>
+                     Devils Lake
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cefe9b7d927e4f7ab4aa5d268149e1cc = L.marker(
+                [38.8790615, -97.1893341],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_61c6232fc8d2442da28c85df704aec4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e5f1e9f0fd24ac08adc34ba639fc452 = $(`<div id="html_1e5f1e9f0fd24ac08adc34ba639fc452" style="width: 100.0%; height: 100.0%;">Dickinson</div>`)[0];
+            popup_61c6232fc8d2442da28c85df704aec4d.setContent(html_1e5f1e9f0fd24ac08adc34ba639fc452);
+        
+
+        marker_cefe9b7d927e4f7ab4aa5d268149e1cc.bindPopup(popup_61c6232fc8d2442da28c85df704aec4d)
+        ;
+
+        
+    
+    
+            marker_cefe9b7d927e4f7ab4aa5d268149e1cc.bindTooltip(
+                `<div>
+                     Dickinson
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_164dc1fea3b5430c926dc07ff215502d = L.marker(
+                [46.877229, -96.789821],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_3c9e5ffb312744ac90520b6c390ab184 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c3b089af7134aeba62a4224cbc31558 = $(`<div id="html_5c3b089af7134aeba62a4224cbc31558" style="width: 100.0%; height: 100.0%;">Fargo</div>`)[0];
+            popup_3c9e5ffb312744ac90520b6c390ab184.setContent(html_5c3b089af7134aeba62a4224cbc31558);
+        
+
+        marker_164dc1fea3b5430c926dc07ff215502d.bindPopup(popup_3c9e5ffb312744ac90520b6c390ab184)
+        ;
+
+        
+    
+    
+            marker_164dc1fea3b5430c926dc07ff215502d.bindTooltip(
+                `<div>
+                     Fargo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b233c90947ce418e967ec50070ac25a9 = L.marker(
+                [47.9078244, -97.0592028],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_195864107ab34f549bc222d31a03e96d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06ab29e55e4b44d0ba0e8dc0d63a018d = $(`<div id="html_06ab29e55e4b44d0ba0e8dc0d63a018d" style="width: 100.0%; height: 100.0%;">Grand Forks</div>`)[0];
+            popup_195864107ab34f549bc222d31a03e96d.setContent(html_06ab29e55e4b44d0ba0e8dc0d63a018d);
+        
+
+        marker_b233c90947ce418e967ec50070ac25a9.bindPopup(popup_195864107ab34f549bc222d31a03e96d)
+        ;
+
+        
+    
+    
+            marker_b233c90947ce418e967ec50070ac25a9.bindTooltip(
+                `<div>
+                     Grand Forks
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_125fec2ed7c141fdbcbaa079f6219ca5 = L.marker(
+                [37.2104434, -76.7738928],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_d7f1c6d58dc84caa9f40e4f7781dcbc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_445f81443eb641a191d07f699b7a2641 = $(`<div id="html_445f81443eb641a191d07f699b7a2641" style="width: 100.0%; height: 100.0%;">Jamestown</div>`)[0];
+            popup_d7f1c6d58dc84caa9f40e4f7781dcbc4.setContent(html_445f81443eb641a191d07f699b7a2641);
+        
+
+        marker_125fec2ed7c141fdbcbaa079f6219ca5.bindPopup(popup_d7f1c6d58dc84caa9f40e4f7781dcbc4)
+        ;
+
+        
+    
+    
+            marker_125fec2ed7c141fdbcbaa079f6219ca5.bindTooltip(
+                `<div>
+                     Jamestown
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2f77c5f9c3b4cf5b652581fb6522947 = L.marker(
+                [46.826415, -100.889704],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_e7dea7302c884170b02c257bd877835d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68d1d9d67e2c457f84806358dccd3185 = $(`<div id="html_68d1d9d67e2c457f84806358dccd3185" style="width: 100.0%; height: 100.0%;">Mandan</div>`)[0];
+            popup_e7dea7302c884170b02c257bd877835d.setContent(html_68d1d9d67e2c457f84806358dccd3185);
+        
+
+        marker_a2f77c5f9c3b4cf5b652581fb6522947.bindPopup(popup_e7dea7302c884170b02c257bd877835d)
+        ;
+
+        
+    
+    
+            marker_a2f77c5f9c3b4cf5b652581fb6522947.bindTooltip(
+                `<div>
+                     Mandan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4be655a10cf04d77b36c4d34dc10f48d = L.marker(
+                [47.6698594, 4.8786165],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_2a282c29a6234c06a265aaae21599d44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c740cb99003242c08fd88b54be3d6bde = $(`<div id="html_c740cb99003242c08fd88b54be3d6bde" style="width: 100.0%; height: 100.0%;">Minot</div>`)[0];
+            popup_2a282c29a6234c06a265aaae21599d44.setContent(html_c740cb99003242c08fd88b54be3d6bde);
+        
+
+        marker_4be655a10cf04d77b36c4d34dc10f48d.bindPopup(popup_2a282c29a6234c06a265aaae21599d44)
+        ;
+
+        
+    
+    
+            marker_4be655a10cf04d77b36c4d34dc10f48d.bindTooltip(
+                `<div>
+                     Minot
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_491e96b29b2b4335aa9cf77ca2dae6fe = L.marker(
+                [52.3726682, -1.2620038],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_a3963ff752344ed6aacf8d354820f1be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3453ba24702e4962881ea2cf01597b09 = $(`<div id="html_3453ba24702e4962881ea2cf01597b09" style="width: 100.0%; height: 100.0%;">Rugby</div>`)[0];
+            popup_a3963ff752344ed6aacf8d354820f1be.setContent(html_3453ba24702e4962881ea2cf01597b09);
+        
+
+        marker_491e96b29b2b4335aa9cf77ca2dae6fe.bindPopup(popup_a3963ff752344ed6aacf8d354820f1be)
+        ;
+
+        
+    
+    
+            marker_491e96b29b2b4335aa9cf77ca2dae6fe.bindTooltip(
+                `<div>
+                     Rugby
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8062b8c64544cc0b9f71051b94b3d37 = L.marker(
+                [46.923313, -98.003155],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_57a476a8440b4861b094ff0e468051d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8da69be492c94401bff96e09ed7a37d8 = $(`<div id="html_8da69be492c94401bff96e09ed7a37d8" style="width: 100.0%; height: 100.0%;">Valley City</div>`)[0];
+            popup_57a476a8440b4861b094ff0e468051d5.setContent(html_8da69be492c94401bff96e09ed7a37d8);
+        
+
+        marker_d8062b8c64544cc0b9f71051b94b3d37.bindPopup(popup_57a476a8440b4861b094ff0e468051d5)
+        ;
+
+        
+    
+    
+            marker_d8062b8c64544cc0b9f71051b94b3d37.bindTooltip(
+                `<div>
+                     Valley City
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c8e40ba075b41129241d73b74dc8453 = L.marker(
+                [46.265879, -96.608863],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_94d623dbe18e4b6ba2e38940d49fb62a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e4375bf71b44f1dbfbd1c0effdf297a = $(`<div id="html_9e4375bf71b44f1dbfbd1c0effdf297a" style="width: 100.0%; height: 100.0%;">Wahpeton</div>`)[0];
+            popup_94d623dbe18e4b6ba2e38940d49fb62a.setContent(html_9e4375bf71b44f1dbfbd1c0effdf297a);
+        
+
+        marker_4c8e40ba075b41129241d73b74dc8453.bindPopup(popup_94d623dbe18e4b6ba2e38940d49fb62a)
+        ;
+
+        
+    
+    
+            marker_4c8e40ba075b41129241d73b74dc8453.bindTooltip(
+                `<div>
+                     Wahpeton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a853d35564b4b96a24e73eb14c29971 = L.marker(
+                [48.1465457, -103.621814],
+                {}
+            ).addTo(map_c6975268046e4bc596d46bab4a570d56);
+        
+    
+        var popup_4f48093765e145af93bbf6d08c2e0031 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_093858b7a8fa4469b3c49c9be07c75eb = $(`<div id="html_093858b7a8fa4469b3c49c9be07c75eb" style="width: 100.0%; height: 100.0%;">Williston</div>`)[0];
+            popup_4f48093765e145af93bbf6d08c2e0031.setContent(html_093858b7a8fa4469b3c49c9be07c75eb);
+        
+
+        marker_2a853d35564b4b96a24e73eb14c29971.bindPopup(popup_4f48093765e145af93bbf6d08c2e0031)
+        ;
+
+        
+    
+    
+            marker_2a853d35564b4b96a24e73eb14c29971.bindTooltip(
+                `<div>
+                     Williston
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
