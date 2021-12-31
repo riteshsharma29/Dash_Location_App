@@ -105,6 +105,12 @@ def render_page_content(pathname):
                   "height": "600px",
                   "width": "100%"
                })
+    elif pathname == "/Arkansas":
+        return html.Iframe(src="assets/maps/Arkansas.html",
+               style = {
+                  "height": "600px",
+                  "width": "100%"
+               })
     elif pathname == "/Arizona":
         return html.Iframe(src="assets/maps/Arizona.html",
                style = {
